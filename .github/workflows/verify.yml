@@ -1,0 +1,14 @@
+name: Verify Identity
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: abhijit.guist@gmail.com
+        run: echo "Hello, world!"
